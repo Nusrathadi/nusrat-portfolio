@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+<section >
+    <div class="circle"></div>
+    <header>
+        <a href="#" > <img src="starbuck.png" class="logo"></a>
+        <ul>
+            <li> <a href="#">Home</a> </li>
+            <li> <a href="#">Menu</a> </li>
+            <li> <a href="#">What's New</a> </li>
+            <li> <a href="#">contact</a> </li>
+        </ul>
+    </header>
+
+    <!--slider-->
+    <div class="content">
+        <div class="textbox">
+            <h2>It's not just coffee <br> it's <span> Starbucks</span></h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, quae ullam ipsum sequi saepe eos culpa porro at beatae iure? Aliquid nulla maxime consequuntur nihil quia doloribus dolores illum eaque voluptatibus possimus!
+            </p>
+            <a href="#">Learn More</a>
+        </div>
+        <div class="imgbox">
+            <img src="drink3.png" alt="" class="starbuck">
+        </div>
+    </div>
+    <ul class="thumb">
+        <li><img src="drink3.png" onclick="imgslider('drink3.png');changecolor('#017143')" alt=""></li>
+        <li><img src="pink.png"   onclick="imgslider('pink.png');changecolor('#eb7459')" alt=""></li>
+        <li><img src="drink3.png" onclick="imgslider('drink3.png');changecolor('#017143')" class="yellow"  alt=""></li>
+    </ul>
+    <ul class="sci">
+        <li><img src="facebook.png"  alt=""></li>
+        <li><img src="instagram.png" alt=""></li>
+        <li><img src="twitter.png" alt=""></li>
+    </ul>
+
+    <script type="text/javascript">
+        function imgslider(anything){
+      document.querySelector('.starbuck').src=anything;
+            
+        }
+        function changecolor(color){
+           const circle= document.querySelector('.circle');
+           circle.style.background=color;
+        }
+
+    </script>
+
+
+</section>
+    
+</body>
+</html>
